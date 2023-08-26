@@ -125,16 +125,15 @@ main {
     margin: 5px 0;
 }
 
-#my-player {
-       display: flex;
-       max-width: 85%;
-       padding-right: 20px;
-   }
+.container {
+    display: flex;
 
-/* #video {
-    max-width: 85%; */
-    /* padding-right: 20px; */
-/* } */
+}
+
+#my-player {
+    max-width: 85%;
+    padding-right: 20px;
+}
 
 #transcript {
     max-width: 500px;
@@ -152,91 +151,90 @@ main {
 
 /* MEDIA QUERY SECTION */
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+    /* Media query: tablets and larger (768px and up) */
+    @media screen and (min-width: 768px) {
 
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
-    #menu {
-        display: flex;
-    }
-
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 180%;
-        line-height: 55px;
-        margin: 0 0.5rem;
-    }
-
-    /* Main content */
-
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 29px;
-    }
-
-    #my-player {
-        display: flex;
-        max-width: 800px;
-        padding-right: 20px;
-    }
-
-    /* #video {
-        max-width: 800px;
-        padding-right: 20px;
-    } */
-
-    #transcript {
-        max-width: 500px;
-        padding-left: 20px;
-    }
-
-    /* Large devices (laptops and desktops, 992px and up) */
-
-    @media screen and (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
+        /* Header */
+        nav {
+            display: block;
+            position: relative;
+            box-shadow: none;
+            width: fit-content;
+            padding-right: 1rem;
         }
 
-
-    }
-
-
-    @media screen and (min-width: 1200px) {
-
-        /* Welcome section */
-        #introduction {
+        #menu {
             display: flex;
-            flex-direction: row;
         }
 
-        #introduction>div {
-            flex: 1;
+        #menu>li {
+            padding-left: 1rem;
         }
 
-        #introduction-image {
-            order: 0
+        .nav-toggle-label {
+            display: none;
+        }
+
+        #logo {
+            font-size: 180%;
+            line-height: 55px;
+            margin: 0 0.5rem;
+        }
+
+        /* Main content */
+
+        main {
+            /* Push main content down to accommodate larger header */
+            margin-top: 29px;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        #my-player {
+            max-width: 800px;
+            padding-right: 20px;
+        }
+
+        #transcript {
+            max-width: 500px;
+            padding-left: 20px;
+        }
+
+        /* Large devices (laptops and desktops, 992px and up) */
+
+        @media screen and (min-width: 992px) {
+            #menu a:hover {
+                border-bottom: 1px solid #3a3a3a;
+            }
+
+
         }
 
 
+        @media screen and (min-width: 1200px) {
+
+            /* Welcome section */
+            #introduction {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #introduction>div {
+                flex: 1;
+            }
+
+            #introduction-image {
+                order: 0
+            }
+
+
+        }
     }
-}
 
-/* @media (max-width: 600px) {
+    /* @media (max-width: 600px) {
     #video,
     #lyrics {
       padding: 0;
