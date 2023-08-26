@@ -1,0 +1,239 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: medium;
+
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    /* box-shadow: 0 2px 2px #3a3a3a; */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    /* box-shadow: 0 2px 2px #3a3a3a; */
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Introduction section */
+
+#welcome {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#welcome h2 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 200%;
+}
+
+
+#introduction p {
+    padding: 10px 20px;
+}
+
+#introduction hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
+
+
+
+
+#video {
+    max-width: 85%;
+    /* padding-right: 20px; */
+}
+
+#transcript {
+    max-width: 500px;
+    padding-left: 20px;
+}
+
+#transcript p {
+    padding: 10px 20px;
+}
+
+.current {
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERY SECTION */
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 180%;
+        line-height: 55px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 29px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    #video {
+        max-width: 800px;
+        padding-right: 20px;
+    }
+
+    #transcript {
+        max-width: 500px;
+        padding-left: 20px;
+    }
+
+    /* Large devices (laptops and desktops, 992px and up) */
+
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+
+    }
+
+
+    @media screen and (min-width: 1200px) {
+
+        /* Welcome section */
+        #introduction {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #introduction>div {
+            flex: 1;
+        }
+
+        #introduction-image {
+            order: 0
+        }
+
+
+    }
+}
+
+/* @media (max-width: 600px) {
+    #video,
+    #lyrics {
+      padding: 0;
+    }
+  } */
