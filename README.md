@@ -4,4 +4,4 @@ The idea is to have the video and text in sync so as the video plays it highligh
 
 The live site is deployed [HERE](https://todiane.github.io/sync-video/) - Use Ctrl + click to open in new window
 
-I am using video.js CDN - find out more [here](https://videojs.com/getting-started)
+

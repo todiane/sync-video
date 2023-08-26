@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
-  
+
 
     <title>Synced Video with Text</title>
 </head>
@@ -46,25 +45,9 @@
             </div>
 
             <div class="container">
-                <video id="my-player" class="video-js" controls preload="auto" max-width="640"
-                    height="264" poster="/assets/images/nature.png" data-setup='{}'>
-                    <source src="/assets/video/syncedvideo.mp4" type="video/mp4">
-                    </source>
-                    <!-- <source src="/assets/video/syncedvideo.webm" type="video/webm">
-                    </source>
-                    <source src="/assets/video/syncedvideo.ogg" type="video/ogg">
-                    </source> -->
-                    <p class="vjs-no-js">
-                        To view this video please enable JavaScript, and consider upgrading to a
-                        web browser that
-                        <a href="https://videojs.com/html5-video-support/" target="_blank">
-                            supports HTML5 video
-                        </a>
-                    </p>
+                <video id="my-player" controls>
+                    <source src="assets/video/syncedvideo.mp4" type="video/mp4">
                 </video>
-                <!-- <video id="video" controls>
-                    <source src="syncedvideo.mp4" type="video/mp4"> -->
-                <!-- </video> -->
 
                 <div id="transcript">
 
@@ -85,7 +68,7 @@
     </main>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+  
 </body>
 
 </html>
