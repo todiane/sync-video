@@ -125,8 +125,9 @@ main {
     margin: 5px 0;
 }
 
-
-
+   .container {
+       display: flex;
+   }
 
 #video {
     max-width: 85%;
