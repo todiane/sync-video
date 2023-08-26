@@ -20,7 +20,7 @@ video.addEventListener('loadedmetadata', () => {
     });
 
     transcript.addEventListener('click', (event) => {
-        if (event.target.tagName === 'p') {
+        if (event.target.tagName === 'P') {
             const time = parseFloat(event.target.getAttribute('data-time'));
             video.currentTime = time;
             event.target.scrollIntoView(); // Scroll the clicked paragraph into view
