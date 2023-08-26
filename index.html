@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
+  
+
     <title>Synced Video with Text</title>
 </head>
 
@@ -31,10 +34,10 @@
             </nav>
         </header>
         <section id="welcome">
-            <h2>Follow Along</h2>
+            <h2>Welcome...</h2>
             <div id="introduction">
                 <div>
-                    <h3>Video with transcript <i class="fa-solid fa-heart-pulse"></i></h3>
+                    <h3>Your First Lesson <i class="fa-solid fa-heart-pulse"></i></h3>
                     <p>
                         Play the video below and it will sync in time to the transcript - which is highlighted.
                         Click anywhere in the transcript and it will take you to the same place in the video.
@@ -42,16 +45,31 @@
                 </div>
             </div>
 
-            <div class="container">
-
-                <video id="video" controls>
-                    <source src="syncedvideo.mp4" type="video/mp4">
+            <!-- <div class="container"> -->
+                <video id="my-player" class="video-js" controls preload="auto" max-width="800"
+                    height="320" poster="/assets/images/nature.png" data-setup='{}'>
+                    <source src="/assets/video/syncedvideo.mp4" type="video/mp4">
+                    </source>
+                    <source src="/assets/video/syncedvideo.webm" type="video/webm">
+                    </source>
+                    <source src="/assets/video/syncedvideo.ogg" type="video/ogg">
+                    </source>
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">
+                            supports HTML5 video
+                        </a>
+                    </p>
+                </video>
+                <!-- <video id="video" controls>
+                    <source src="syncedvideo.mp4" type="video/mp4"> -->
                 </video>
 
                 <div id="transcript">
 
-                    <p data-time="0.00">Hi, my name is Diane</p>
-                    <p data-time="0.10">This is eight seconds later...</p>
+                    <p data-time="0.00">Hi, my name is Diane and I am looking to create a</p>
+                    <p data-time="0.05">video This is 5 seconds later...</p>
                     <p data-time="0.15">This is 15 seconds later...</p>
                     <p data-time="0.20">This is 20 seconds later...</p>
                     <p data-time="0.20">This is 20 seconds later...</p>
@@ -63,6 +81,7 @@
     </main>
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 </body>
 
 </html>

@@ -125,14 +125,16 @@ main {
     margin: 5px 0;
 }
 
-   .container {
+#my-player {
        display: flex;
+       max-width: 85%;
+       padding-right: 20px;
    }
 
-#video {
-    max-width: 85%;
+/* #video {
+    max-width: 85%; */
     /* padding-right: 20px; */
-}
+/* } */
 
 #transcript {
     max-width: 500px;
@@ -187,14 +189,16 @@ main {
         margin-top: 29px;
     }
 
-    .container {
+    #my-player {
         display: flex;
-    }
-
-    #video {
         max-width: 800px;
         padding-right: 20px;
     }
+
+    /* #video {
+        max-width: 800px;
+        padding-right: 20px;
+    } */
 
     #transcript {
         max-width: 500px;
