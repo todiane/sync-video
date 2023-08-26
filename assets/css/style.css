@@ -10,9 +10,9 @@
 
 /* General styles */
 body {
-    min-height: 100vh;
+    /* min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
@@ -117,7 +117,7 @@ main {
 
 
 #introduction p {
-    padding: 10px 20px;
+    padding: 15px 20px;
 }
 
 #introduction hr {
@@ -125,10 +125,10 @@ main {
     margin: 5px 0;
 }
 
-.container {
+/* .container {
     display: flex;
 
-}
+} */
 
 #my-player {
     max-width: 85%;
