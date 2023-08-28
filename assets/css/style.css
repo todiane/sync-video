@@ -27,6 +27,7 @@ h3 {
 #welcome {
     width: 90%;
     margin: 20px auto;
+    padding-top: 2rem;
 }
 
 #welcome h2 {
@@ -44,7 +45,7 @@ h3 {
     padding: 15px 20px;
 }
 
-  
+
 video {
     max-width: 80%;
     padding: 0% 7% 3%;
