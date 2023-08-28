@@ -59,51 +59,40 @@ h3 {
     padding: 10px 15px;
 }
   
-  .container {
+.container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
-  }
+}
   
-  
-  
-  .transcript p {
-    cursor: pointer;
-    margin: 5px 0;
-  }
-  
-  .transcript p.highlight {
-    background-color: #f0f0f0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  video {
+video {
     max-width: 70%;
-  }
-  
-  .transcript {
+}
+
+.transcript {
     max-width: 25%;
     padding-left: 20px;
-  }
+}
   
-  .transcript p {
+  
+.transcript p {
     cursor: pointer;
     margin: 5px 0;
-  }
+}
   
-  .transcript p:hover {
+.transcript p.highlight {
+    background-color: #faf5f5;
+}
+
+.transcript p:hover {
     background-color: #f0f0f0;
-  }
+}
+  
+  
+
+  
+
+
   
  
