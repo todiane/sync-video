@@ -16,8 +16,10 @@ videoPlayer.addEventListener('timeupdate', () => {
     const endTime = parseFloat(paragraph.nextElementSibling?.getAttribute('data-time')) || videoPlayer.duration;
     if (currentTime >= startTime && currentTime < endTime) {
       paragraph.classList.add('highlight');
+      paragraph.style.fontWeight = 'bold'; // Add this line to make text bold
     } else {
       paragraph.classList.remove('highlight');
+      paragraph.style.fontWeight = 'normal'; // Add this line to reset text weight
     }
   });
 });
