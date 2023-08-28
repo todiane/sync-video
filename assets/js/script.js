@@ -1,30 +1,23 @@
+const videoPlayer = document.getElementById('videoPlayer');
+const transcriptParagraphs = document.querySelectorAll('.transcript p');
 
-video.addEventListener('loadedmetadata', () => {
- 
-    const transcript = document.getElementById('transcript');
-    const video = document.getElementById('video');
+transcriptParagraphs.forEach(paragraph => {
+  paragraph.addEventListener('click', () => {
+    const startTime = parseFloat(paragraph.getAttribute('data-time'));
+    videoPlayer.currentTime = startTime;
+    videoPlayer.play();
+  });
+});
 
-    video.addEventListener('timeupdate', () => {
-        const currentTime = video.currentTime;
-
-        const currentParagraph = transcript.querySelector('p.current');
-        if (currentParagraph) {
-            currentParagraph.classList.remove('current');
-        }
-
-        const newParagraph = transcript.querySelector(`p[data-time="${currentTime}"]`);
-        if (newParagraph) {
-            newParagraph.classList.add('current');
-            newParagraph.scrollIntoView();
-        }
-    });
-
-    transcript.addEventListener('click', (event) => {
-        if (event.target.tagName === 'P') {
-            const time = parseFloat(event.target.getAttribute('data-time'));
-            video.currentTime = time;
-            event.target.scrollIntoView(); // Scroll the clicked paragraph into view
-        }
-    });
-
-}); 
+videoPlayer.addEventListener('timeupdate', () => {
+  const currentTime = videoPlayer.currentTime;
+  transcriptParagraphs.forEach(paragraph => {
+    const startTime = parseFloat(paragraph.getAttribute('data-time'));
+    const endTime = parseFloat(paragraph.nextElementSibling?.getAttribute('data-time')) || videoPlayer.duration;
+    if (currentTime >= startTime && currentTime < endTime) {
+      paragraph.classList.add('highlight');
+    } else {
+      paragraph.classList.remove('highlight');
+    }
+  });
+});
