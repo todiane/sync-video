@@ -5,11 +5,10 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
-
 /* General styles */
+
 body {
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
@@ -18,23 +17,9 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    font-size: medium;
-
-}
-
-/* Main content */
-main {
-    margin-top: 7px;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Introduction section */
@@ -56,23 +41,19 @@ main {
 }
 
 h3 {
-    padding: 10px 15px;
+    padding: 15px 20px;
 }
-  
-.container {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 20px;
-}
+
   
 video {
-    max-width: 70%;
+    max-width: 80%;
+    padding: 0% 7% 3%;
+       
 }
 
 .transcript {
-    max-width: 25%;
-    padding-left: 20px;
+    max-width: 100%;
+    padding: 0% 7% 3%;
 }
   
   
@@ -89,9 +70,7 @@ video {
     background-color: #f0f0f0;
 }
   
-  
 
-  
 
 
   
