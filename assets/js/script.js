@@ -26,8 +26,8 @@ videoPlayer.addEventListener('timeupdate', () => {
 
 // code for button to hide and show transcript
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+
+document.addEventListener("DOMContentLoaded", function() {
   var toggleButton = document.getElementById("toggleTranscript");
     var transcript = document.getElementById("transcript");
 
@@ -39,4 +39,4 @@ videoPlayer.addEventListener('timeupdate', () => {
     }
   });
 });
-</script>;
+
