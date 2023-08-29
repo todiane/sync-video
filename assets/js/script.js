@@ -23,3 +23,20 @@ videoPlayer.addEventListener('timeupdate', () => {
     }
   });
 });
+
+// code for button to hide and show transcript
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var toggleButton = document.getElementById("toggleTranscript");
+    var transcript = document.getElementById("transcript");
+
+    toggleButton.addEventListener("click", function() {
+    if (transcript.style.display === "none" || transcript.style.display === "") {
+        transcript.style.display = "block";
+    } else {
+        transcript.style.display = "none";
+    }
+  });
+});
+</script>;
