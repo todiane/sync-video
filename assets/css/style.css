@@ -72,14 +72,12 @@ p {
 /* video and transcript */
 
 video {
-    max-width: 80%;
-    padding: 0% 7% 3%;
+    max-width: 100%;
        
 }
 
 .transcript {
-    max-width: 90%;
-    padding: 0% 7% 3%;
+    padding-left: 2%;
 }
   
   
@@ -96,10 +94,6 @@ video {
     background-color: #f0f0f0;
 }
 
-.transcript-column {
-    max-width: 90%;
-    padding: 2% 0% ;
-}
 
 #showTranscript {
     background-color: #000;  
@@ -119,12 +113,6 @@ video {
 
 /* @media SECTION */
 
- @media screen and (min-width: 1200px) {
-    video {
-        max-width: 90%;
-    }
-
-
 @media screen and (min-width: 600px) {
     #wrapper {
         display: grid;
@@ -133,4 +121,3 @@ video {
     }
 
  }
-}
