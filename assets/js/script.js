@@ -26,17 +26,21 @@ videoPlayer.addEventListener('timeupdate', () => {
 
 // code for button to hide and show transcript
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  var toggleButton = document.getElementById("toggleTranscript");
+document.addEventListener("DOMContentLoaded", function () {
+    var showButton = document.getElementById("showTranscript");
+    var hideButton = document.getElementById("hideTranscript");
     var transcript = document.getElementById("transcript");
 
-    toggleButton.addEventListener("click", function() {
-    if (transcript.style.display === "none" || transcript.style.display === "") {
+    showButton.addEventListener("click", function () {
         transcript.style.display = "block";
-    } else {
+        showButton.style.display = "none";
+        hideButton.style.display = "inline";
+    });
+
+    hideButton.addEventListener("click", function () {
         transcript.style.display = "none";
-    }
-  });
+        hideButton.style.display = "none";
+        showButton.style.display = "inline";
+    });
 });
 

@@ -49,8 +49,8 @@ p {
 }
 
 #wrapper {
-    /* display: grid;
-	grid-template-columns: 1fr; */
+    display: grid;
+	grid-template-columns: 1fr;
     box-sizing: border-box;
     margin-right: auto;
     margin-left: auto;
@@ -59,7 +59,6 @@ p {
 
 .card {
     margin-top: 10px;
-    padding: 20px;
     background-color: #fff;
 }
 
@@ -95,6 +94,27 @@ video {
 
 .transcript p:hover {
     background-color: #f0f0f0;
+}
+
+.transcript-column {
+    max-width: 90%;
+    padding: 2% 0% ;
+}
+
+#showTranscript {
+    background-color: #000;  
+    border: none;
+    color: aqua;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#hideTranscript {
+    background-color: aqua;
+    border: none;
+    color: #000;
+    padding: 10px 20px;
+    text-align: center;
 }
 
 /* @media SECTION */
